@@ -1,0 +1,106 @@
+#page-home{
+    height: 100vh;
+    /* alteração dinamico vai ver o tamanho de tudo que aparece na tela */
+    background: url('../assets/home-background.svg') no-repeat;
+    /* coloca imagem como plano de fundo do html sem se repetir*/
+    background-position: 35vw bottom;
+    /* terá largura de 35 view port */
+}
+#page-home .content{
+    height: 100%;
+    width: 90%;
+    /* limita o tamanho maximo que irá acupar da tela %*/
+    /* width: 900px; quantos pixel irá ocupar*/
+    max-width: 1100px;
+    /* limita  maximo de pixel aceito */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin: 0 auto;
+    /*      |  |*/
+    /*      |  |->left rigth
+            |->top e bootle */
+    display: flex;
+    flex-direction: column;
+}
+#page-home header{
+
+    margin-top: 48px;
+    display: flex;/*um ao lado do outro*/
+    align-items: center;/*centralizado*/
+    justify-content: space-between;
+}
+
+#page-home header a {
+    color: var(--titleColor);
+    font-weight: 700;
+    display: flex;
+}
+
+#page-home header a span{
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('../assets/log-in.svg');
+
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main{
+    max-width: 560px;
+
+    height: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+    color: var(--titleColor);
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 48px;
+    margin-top: 24px;
+}
+#page-home main a{
+    width: 100%;
+    width: 360px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+
+    margin-top: 40px;
+    transition: 400ms;
+
+    font-weight: bold;
+    color: white;
+}
+#page-home main a:hover{
+    background-color: #2fb8be;
+}
+#page-home main a span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-left: 8px;
+    background-color: rgba(0 0, 0, 0.08);
+}
+#page-home main a strong{
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+#page-home main a span::after{
+    content: "";
+    background-image: url('../assets/search.svg');
+    width: 20px;
+    height: 20px;
+}

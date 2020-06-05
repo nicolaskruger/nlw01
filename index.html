@@ -1,0 +1,66 @@
+<!-- !(inicia um html) -->
+<!-- # inicia ima div -->
+<!DOCTYPE html>
+<html lang="pt_br" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="styles/main.css">
+    <link rel="stylesheet"  href="styles/home.css">
+    
+    <link rel="stylesheet"  href="styles/modal.css">
+    <link rel="stylesheet"  href="styles/responsive.css">
+
+</head><!--definições de formatação-->
+<body>
+    <div id="page-home">
+        <div class="content">
+            <header>
+                <img src="assets/logo.svg" alt="Logomarca"><!-- <h3 class="red">Ecoleta</h3>titulo não tão gande in block ocupa a linha toda terá propriedades da classe red -->
+                <a href="create-point.html">
+                    <span></span>
+                    cadastre um ponto de coleta
+                </a><!--link in line un do lado do outro-->
+            </header><!--consegue colocar um elelmeto ao lado do outro após editar o css-->
+
+            <main>
+                <h1>texto h1</h1><!--titulo maior-->
+                <p>texto p</p><!--formato de texto comum-->
+                <a href="#" name="pesquisa">
+                    <span></span>
+                    <strong>bota</strong>
+                </a> <!-- <button>botão</button>botão -->
+            </main>
+            
+        </div><!--class classifica o elemento-->
+    </div>
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Pontos de coleta</h1>
+                <a href="#">fechar</a>
+                <!-- href="" recarrega a pagina -->
+                <!-- href="#" não faz nada-->
+            </div>
+            <form action="search.html">
+                <label for="search">Cidade</label>
+                <div class="field">
+                    <input 
+                    type="text" 
+                    name="search" 
+                    id=""
+                    placeholder="Peaquise por cidade"
+                    >
+                    <button>
+                        <img src="assets/search.svg" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>

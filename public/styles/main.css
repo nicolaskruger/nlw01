@@ -1,0 +1,32 @@
+:root {
+    --titleColor: #322153;
+    --primaryColor: #34cb79;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--titleColor);
+}
+a {
+    text-decoration: none;
+}
+
+.red {/* . é a referencia para uma classe refenciando a classe red */
+    background-color: red;
+    /* cor de fundo é vermelha */
+
+}
+
+
+
+

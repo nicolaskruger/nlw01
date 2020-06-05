@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+<!-- !(inicia um html) -->
+<!-- # inicia ima div -->
+{% set bodyId = "page-home" %}
+    
+    {% block styles %}
+    <link rel="stylesheet"  href="styles/home.css">
+    
+    <link rel="stylesheet"  href="styles/modal.css">
+    {% endblock styles %}
+
+
+    {# <div id="page-home"> #}
+        {% block content %}
+        <div class="content">
+            <header>
+                <img src="assets/logo.svg" alt="Logomarca"><!-- <h3 class="red">Ecoleta</h3>titulo não tão gande in block ocupa a linha toda terá propriedades da classe red -->
+                <a href="create-point">
+                    <span></span>
+                    cadastre um ponto de coleta
+                </a><!--link in line un do lado do outro-->
+            </header><!--consegue colocar um elelmeto ao lado do outro após editar o css-->
+
+            <main>
+                <h1>texto h1</h1><!--titulo maior-->
+                <p>texto p</p><!--formato de texto comum-->
+                <a href="#" name="pesquisa">
+                    <span></span>
+                    <strong>bota</strong>
+                </a> <!-- <button>botão</button>botão -->
+            </main>
+            
+        </div><!--class classifica o elemento-->
+        {% endblock content %}
+        
+    <!-- colocar modal -->
+    {% block modal %}
+        {% include "partials/modal.html" %} 
+    {% endblock modal %}
+    
+    {% block script %}
+        <script src="script/index.js"></script>
+    {% endblock script %}
